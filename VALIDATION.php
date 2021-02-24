@@ -20,11 +20,11 @@
 			if ($_SERVER["REQUEST_METHOD"] == "POST")
    {
 
-      if (empty($_POST["name"]))
+      if (empty($_POST["Name"]))
       {
   		$err_Name = "Name is required";
   	}
-     else if(strlen($_POST["name"])<5)
+     else if(strlen($_POST["Name"])<5)
   	 {
   	  $err_Name="Enter valid name";
   	 }
@@ -34,7 +34,7 @@
   	 }
   	     if (empty($_POST["Password"]))
       {
-  		$err_Passwprd = "password is required";
+  		$err_Password = "Password is required";
   	   }
      else if(strlen($_POST["Password"])<8)
   	 {
@@ -70,7 +70,7 @@
 				}
 				
 				else{
-					$bio=$_POST["Bio"];
+					$Bio=$_POST["Bio"];
 				}
 				
     
@@ -156,4 +156,5 @@
 	  </body>
 
 </html>
+
 
